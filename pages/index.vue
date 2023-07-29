@@ -1,6 +1,3 @@
 <template>
-    <div>
-      Home
-    </div>
-  </template>
-  
+  <div>Home</div>
+</template>

@@ -6,11 +6,16 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "format": "prettier .  --write"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/eslint-config": "^0.1.1",
     "@types/node": "^18.17.0",
-    "nuxt": "^3.6.5"
+    "eslint": "^8.46.0",
+    "nuxt": "^3.6.5",
+    "prettier": "^3.0.0"
   }
 }
