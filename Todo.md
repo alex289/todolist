@@ -7,7 +7,7 @@ Modules:
 - [ ] pinia?
 - [x] tailwind
 - [ ] nuxt-auth
-- [ ] color-mode
+- [x] color-mode
 
 Features:
 
@@ -21,4 +21,6 @@ Features:
 
 Design:
 
-- [ ] Light and dark mode
+- [x] Light and dark mode
+- [ ] Layout
+  - [ ] Navbar
