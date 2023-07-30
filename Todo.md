@@ -6,7 +6,7 @@ Modules:
 - [x] prettier
 - [ ] pinia?
 - [x] tailwind
-- [ ] nuxt-auth
+- [x] nuxt-auth
 - [x] color-mode
 
 Features:
@@ -15,7 +15,7 @@ Features:
 - [ ] Add items
 - [ ] Update items
 - [ ] Delete items
-- [ ] Authentication
+- [x] Authentication
 - [ ] Database
 - [ ] Vercel deployment
 
@@ -23,4 +23,4 @@ Design:
 
 - [x] Light and dark mode
 - [ ] Layout
-  - [ ] Navbar
+  - [x] Navbar

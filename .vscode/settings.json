@@ -4,6 +4,7 @@
     "source.fixAll": true
   },
   "files.exclude": {
-    ".nuxt": true
+    ".nuxt": true,
+    ".output": true
   }
 }
