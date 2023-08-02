@@ -4,7 +4,7 @@ Modules:
 
 - [x] eslint
 - [x] prettier
-- [ ] pinia?
+- [x] pinia?
 - [x] tailwind
 - [x] nuxt-auth
 - [x] color-mode
