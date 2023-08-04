@@ -1,11 +1,11 @@
-import { TodolistItem } from 'models/todolist-item';
+import { TaskItem } from 'models/task-item';
 import { defineStore } from 'pinia';
-import { TaskStatus } from './enums/task-status';
+import { TaskStatus } from '../models/enums/task-status';
 
 export const useTodolistStore = defineStore('todolist', {
   state: () => {
     return {
-      tasks: [] as TodolistItem[],
+      tasks: [] as TaskItem[],
     };
   },
   actions: {
@@ -33,6 +33,6 @@ export const useTodolistStore = defineStore('todolist', {
     },
   },
   getters: {
-    tasks: (state) => state.tasks,
+    allTasks: (state) => state.tasks,
   },
 });
