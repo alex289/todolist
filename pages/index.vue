@@ -4,8 +4,6 @@ const { status } = useAuth();
 
 <template>
   <div>
-    <Head><Title>Todolist</Title></Head>
-
     <h5
       v-if="status === 'unauthenticated'"
       class="mt-4 text-center text-xl font-bold dark:text-white">

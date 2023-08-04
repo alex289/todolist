@@ -10,4 +10,16 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      title: 'Todolist',
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      bodyAttrs: {
+        class: 'dark:bg-slate-800',
+      },
+      meta: [{ name: 'description', content: 'Some todo app' }],
+    },
+  },
 });

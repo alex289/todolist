@@ -7,7 +7,6 @@ const isUserMenuOpen = ref(false);
 
 <template>
   <div>
-    <Body class="dark:bg-slate-800"></Body>
     <nav class="border-gray-200 bg-white dark:bg-gray-900">
       <div
         class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">

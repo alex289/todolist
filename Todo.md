@@ -18,7 +18,7 @@ Features:
 - [x] Authentication
 - [x] Database
 - [ ] Error handling
-- [ ] Toasts
+- [ ] Toasts - https://github.com/Maronato/vue-toastification/issues/374
 
 Design:
 
