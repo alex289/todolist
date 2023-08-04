@@ -1,6 +1,6 @@
+import { task } from '@prisma/client';
 import { defineStore } from 'pinia';
 import { TaskStatus } from '../enums/task-status';
-import { task } from '@prisma/client';
 
 export const useTodolistStore = defineStore('todolist', {
   state: () => {
