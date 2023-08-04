@@ -11,16 +11,18 @@ Modules:
 
 Features:
 
-- [ ] Display items
-- [ ] Add items
+- [x] Display items
+- [x] Add items
 - [ ] Update items
-- [ ] Delete items
+- [x] Delete items
 - [x] Authentication
 - [ ] Database
-- [ ] Vercel deployment
 
 Design:
 
 - [x] Light and dark mode
 - [ ] Layout
   - [x] Navbar
+  - [x] Add tasks dialog
+  - [x] Add tasks display
+  - [ ] Add Update dialog
