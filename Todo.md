@@ -4,7 +4,7 @@ Modules:
 
 - [x] eslint
 - [x] prettier
-- [x] pinia?
+- [x] pinia
 - [x] tailwind
 - [x] nuxt-auth
 - [x] color-mode
@@ -16,7 +16,7 @@ Features:
 - [ ] Update items
 - [x] Delete items
 - [x] Authentication
-- [ ] Database
+- [ ] Database - https://github.com/MuhammadKhizar7/nuxt-prisma
 
 Design:
 
