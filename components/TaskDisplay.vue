@@ -32,9 +32,9 @@ store.loadTasks();
 
     <div class="mb-2 mt-6 flex justify-between">
       <button
-        @click="() => store.removeTask(task.id)"
         type="button"
-        class="mr-6 rounded-lg bg-red-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
+        class="mr-6 rounded-lg bg-red-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+        @click="() => store.removeTask(task.id)">
         <Icon name="octicon:trash-24" class="h-5 w-5" />
       </button>
 
