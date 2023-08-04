@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useTodolistStore } from '../stores/todolist';
 
+const { data } = useAuth();
 const store = useTodolistStore();
 
 const active = useState('active', () => false);
@@ -21,7 +22,7 @@ const taskInput = useState('taskInput', () => '');
       class="fixed inset-0 z-50 flex items-center justify-center bg-gray-700 bg-opacity-75"
       @submit.prevent="
         (event) => {
-          store.addTask((event.target as any).task.value);
+          store.addTask((event.target as any).task.value, data!.user!.email!);
           active = false;
           taskInput = '';
         }

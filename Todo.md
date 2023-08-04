@@ -16,7 +16,9 @@ Features:
 - [ ] Update items
 - [x] Delete items
 - [x] Authentication
-- [ ] Database - https://github.com/MuhammadKhizar7/nuxt-prisma
+- [x] Database
+- [ ] Error handling
+- [ ] Toasts
 
 Design:
 

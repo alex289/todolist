@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { TaskStatus } from '../models/enums/task-status';
+import { TaskStatus } from '../enums/task-status';
 import { useTodolistStore } from '../stores/todolist';
 
 const store = useTodolistStore();
+store.loadTasks();
 </script>
 
 <template>

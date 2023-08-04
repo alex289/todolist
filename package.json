@@ -9,7 +9,8 @@
     "postinstall": "nuxt prepare",
     "clean": "nuxt clean --lock --modules",
     "lint": "eslint .",
-    "format": "prettier .  --write"
+    "format": "prettier .  --write",
+    "setup-prisma": "prisma generate && prisma db push"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -27,8 +28,10 @@
     "prettier-plugin-tailwindcss": "^0.4.1"
   },
   "dependencies": {
+    "@prisma/client": "^5.1.1",
     "@sidebase/nuxt-auth": "0.6.0-beta.3",
     "next-auth": "^4.22.3",
-    "pinia": "^2.1.6"
+    "pinia": "^2.1.6",
+    "prisma": "^5.1.1"
   }
 }
