@@ -17,8 +17,8 @@ Features:
 - [x] Delete items
 - [x] Authentication
 - [x] Database
-- [ ] Error handling
-- [ ] Toasts - https://github.com/Maronato/vue-toastification/issues/374
+- [x] Error handling
+- [x] Toasts
 
 Design:
 

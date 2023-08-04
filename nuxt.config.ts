@@ -16,9 +16,6 @@ export default defineNuxtConfig({
       title: 'Todolist',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      bodyAttrs: {
-        class: 'dark:bg-slate-800',
-      },
       meta: [{ name: 'description', content: 'Some todo app' }],
     },
   },
