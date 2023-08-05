@@ -91,5 +91,11 @@ export const useTodolistStore = defineStore('todolist', {
   },
   getters: {
     allTasks: (state) => state.tasks,
+    newTasks: (state) =>
+      state.tasks.filter((task) => task.status === TaskStatus.New),
+    inProgressTasks: (state) =>
+      state.tasks.filter((task) => task.status === TaskStatus.InProgress),
+    doneTasks: (state) =>
+      state.tasks.filter((task) => task.status === TaskStatus.Done),
   },
 });

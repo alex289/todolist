@@ -19,7 +19,7 @@ Features:
 - [x] Database
 - [x] Error handling
 - [x] Toasts
-- [ ] Display tasks by status
+- [x] Display tasks by status
 
 Design:
 

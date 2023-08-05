@@ -3,22 +3,50 @@ import debounce from 'lodash/debounce';
 import { TaskStatus } from '../enums/task-status';
 import { useTodolistStore } from '../stores/todolist';
 
+const props = defineProps({
+  status: {
+    type: Number as PropType<TaskStatus>,
+    required: true,
+  },
+  showEmptyMessage: {
+    type: Boolean,
+    default: false,
+  },
+});
 const store = useTodolistStore();
 store.loadTasks();
 
 const updateTask = debounce((id: number, task: string) => {
   store.updateTask(id, task);
 }, 500);
+
+const filteredTasks = computed(() => {
+  switch (props.status) {
+    case TaskStatus.New:
+      return store.newTasks;
+    case TaskStatus.InProgress:
+      return store.inProgressTasks;
+    case TaskStatus.Done:
+      return store.doneTasks;
+    default:
+      return [];
+  }
+});
 </script>
 
 <template>
   <h5
-    v-if="store.allTasks.length === 0"
+    v-if="store.allTasks.length === 0 && showEmptyMessage"
     class="text-center text-xl font-bold dark:text-white">
     No tasks yet!
   </h5>
+  <h5
+    v-if="filteredTasks.length > 0"
+    class="mb-3 text-center text-xl font-bold dark:text-white">
+    {{ TaskStatus[props.status] }}
+  </h5>
   <div
-    v-for="task in store.allTasks"
+    v-for="task in filteredTasks"
     :key="task.id"
     :class="{
       'border-gray-700': task.status === TaskStatus.New,

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { TaskStatus } from '../enums/task-status';
 const { status } = useAuth();
 </script>
 
@@ -12,7 +13,9 @@ const { status } = useAuth();
 
     <div v-if="status === 'authenticated'">
       <AddTask />
-      <TaskDisplay />
+      <TaskDisplay :status="TaskStatus.New" show-empty-message />
+      <TaskDisplay :status="TaskStatus.InProgress" />
+      <TaskDisplay :status="TaskStatus.Done" />
     </div>
   </div>
 </template>
