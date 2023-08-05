@@ -20,6 +20,7 @@
     "@pinia/nuxt": "^0.4.11",
     "@tailwindcss/forms": "^0.5.4",
     "@tailwindcss/typography": "^0.5.9",
+    "@types/lodash": "^4.14.196",
     "@types/node": "^18.17.0",
     "@typescript-eslint/parser": "^6.2.1",
     "eslint": "^8.46.0",
@@ -33,6 +34,7 @@
   "dependencies": {
     "@prisma/client": "^5.1.1",
     "@sidebase/nuxt-auth": "0.6.0-beta.3",
+    "lodash.debounce": "^4.0.8",
     "next-auth": "^4.22.3",
     "pinia": "^2.1.6",
     "prisma": "^5.1.1",

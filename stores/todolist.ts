@@ -20,6 +20,7 @@ export const useTodolistStore = defineStore('todolist', {
             toast.error('Failed to create task');
             return;
           }
+          toast.success('Task created');
           this.tasks.push({
             id: this.tasks.length + 1,
             task,
@@ -73,6 +74,7 @@ export const useTodolistStore = defineStore('todolist', {
             toast.error('Failed to delete task');
             return;
           }
+          toast.success('Task deleted');
           this.tasks = this.tasks.filter((task) => task.id !== id);
         },
       });

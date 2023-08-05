@@ -13,18 +13,18 @@ Features:
 
 - [x] Display items
 - [x] Add items
-- [ ] Update items
+- [x] Update items
 - [x] Delete items
 - [x] Authentication
 - [x] Database
 - [x] Error handling
 - [x] Toasts
+- [ ] Display tasks by status
 
 Design:
 
 - [x] Light and dark mode
-- [ ] Layout
+- [x] Layout
   - [x] Navbar
   - [x] Add tasks dialog
   - [x] Add tasks display
-  - [ ] Add Update dialog

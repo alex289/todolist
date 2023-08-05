@@ -1,9 +1,14 @@
 <script setup lang="ts">
+import debounce from 'lodash/debounce';
 import { TaskStatus } from '../enums/task-status';
 import { useTodolistStore } from '../stores/todolist';
 
 const store = useTodolistStore();
 store.loadTasks();
+
+const updateTask = debounce((id: number, task: string) => {
+  store.updateTask(id, task);
+}, 500);
 </script>
 
 <template>
@@ -23,11 +28,10 @@ store.loadTasks();
     class="mx-auto mb-6 block max-w-sm rounded-lg border bg-white p-6 shadow dark:bg-gray-800">
     <input
       :value="task.task"
-      disabled
       class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
       @input="
         (event) =>
-          store.updateTask(task.id, (event.target as HTMLSelectElement).value)
+          updateTask(task.id, (event.target as HTMLSelectElement).value)
       " />
 
     <div class="mb-2 mt-6 flex justify-between">
