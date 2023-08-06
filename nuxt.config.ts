@@ -19,4 +19,5 @@ export default defineNuxtConfig({
       meta: [{ name: 'description', content: 'Some todo app' }],
     },
   },
+  build: { transpile: ['vue-toastification'] },
 });
