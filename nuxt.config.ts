@@ -10,6 +10,9 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  auth: {
+    origin: 'http://localhost:3000',
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
