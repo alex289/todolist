@@ -1,5 +1,5 @@
 diff --git a/package.json b/package.json
-index 0e361ef9d4a2d462fb5d4c8711987ac50aa8363c..53bf4121e5c798f99bf6a4d62e2b42d0c7b1e0ff 100644
+index d847d8c802cb0043ed0d0bcad7246e9e0679b1fe..ca664d36a6599f7b690c204c92f80fec9e76062e 100644
 --- a/package.json
 +++ b/package.json
 @@ -57,6 +57,10 @@
@@ -7,9 +7,9 @@ index 0e361ef9d4a2d462fb5d4c8711987ac50aa8363c..53bf4121e5c798f99bf6a4d62e2b42d0
        "types": "./providers/*.d.ts",
        "default": "./providers/*.js"
 +    },
-+    "./core": {
-+      "types": "./core/index.d.ts",
-+      "default": "./core/index.js"
++    "./core/*": {
++      "types": "./core/*.d.ts",
++      "default": "./core/*.js"
      }
    },
-   "scripts": {
+   "files": [
