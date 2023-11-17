@@ -12,6 +12,9 @@ export default defineNuxtConfig({
   },
   auth: {
     origin: 'http://localhost:3000',
+    provider: {
+      type: 'authjs',
+    },
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
